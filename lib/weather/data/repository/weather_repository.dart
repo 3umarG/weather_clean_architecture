@@ -3,7 +3,7 @@ import 'package:weather_clean_arch/weather/domain/entities/weather.dart';
 import 'package:weather_clean_arch/weather/domain/repository/base_weather_repository.dart';
 
 class WeatherRepository implements BaseWeatherRepository {
-  final RemoteDataSource remoteDataSource;
+  final BaseRemoteDataSource remoteDataSource;
 
   WeatherRepository(this.remoteDataSource);
 

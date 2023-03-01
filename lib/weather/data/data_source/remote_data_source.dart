@@ -15,7 +15,7 @@ class RemoteDataSource extends BaseRemoteDataSource {
     try {
       var response = await Dio().get(
           "${AppConstants.BASE_URL}weather?q=$countryName&appid=${AppConstants.appKey}");
-      return WeatherModel.fromJson(json.decode(response.data));
+      return WeatherModel.fromJson(response.data);
     } catch (e) {
       print(e);
       return null;
