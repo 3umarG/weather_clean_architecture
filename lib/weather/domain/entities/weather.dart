@@ -1,15 +1,15 @@
 class Weather {
-  final String name;
-  final String country;
-  final double lat;
-  final double lon;
-  final String tz_id;
+  final int id;
+  final String cityName;
+  final String main;
+  final String description;
+  final int pressure;
 
   Weather(
-    this.name,
-    this.country,
-    this.lat,
-    this.lon,
-    this.tz_id,
+    this.id,
+    this.cityName,
+    this.main,
+    this.description,
+    this.pressure,
   );
 }
